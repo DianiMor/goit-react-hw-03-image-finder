@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { InfinitySpin } from 'react-loader-spinner';
+import InfinitySpin from 'react-loader-spinner';
 
 class Spinner extends Component {
   render() {
