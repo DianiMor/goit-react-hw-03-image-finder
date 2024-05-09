@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-/* import axios from 'axios'; */
+import axios from 'axios';
 import Searchbar from './searchbar/Searchbar.jsx';
 import ImageGallery from './imageGallery/ImageGallery.jsx';
 import ImageGalleryItem from './imageGalleryItem/ImageGalleryItem.jsx';
@@ -29,7 +29,7 @@ class App extends Component {
 
     this.setState({ loading: true });
 
-    /* axios
+    axios
       .get(url)
       .then(response => {
         this.setState(prevState => ({
@@ -40,7 +40,7 @@ class App extends Component {
       .catch(error => console.error('Error fetching images:', error))
       .finally(() => {
         this.setState({ loading: false });
-      }); */
+      });
   };
 
   handleLoadMore = async () => {
